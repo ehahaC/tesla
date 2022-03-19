@@ -13,7 +13,10 @@ import {
 	QToolbarTitle,
 	QIcon,
 	QPage,
-	QAvatar
+	QAvatar,
+	QForm,
+	QInput,
+	QTooltip
 } from "quasar";
 import quasarUserOptions from "../quasar-user-options";
 
@@ -32,5 +35,8 @@ export function initQuasar(app: any) {
 		.component("QIcon", QIcon)
 		.component("QPage", QPage)
 		.component("QAvatar", QAvatar)
+		.component("QForm", QForm)
+		.component("QInput", QInput)
+		.component("QTooltip", QTooltip)
 		.use(Quasar, quasarUserOptions);
 }
