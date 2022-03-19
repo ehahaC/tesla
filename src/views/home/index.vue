@@ -1,5 +1,5 @@
 <template>
-	<div class="model">
+	<div class="model" v-for="item in 4" :key="item">
 		<img
 			src="https://tesla-cdn.thron.cn/delivery/public/image/tesla/56c397b9-a510-4000-8ff3-97197efd9570/bvlatuR/std/2880x1800/homepage-model-3-hero-desktop-cn"
 			alt=""
@@ -12,8 +12,8 @@
 		</p>
 
 		<section class="button-group">
-			<q-btn color="dark" rounded class="sm:full-width">定制我的 {{ 'MODEL 3' }}</q-btn>
-			<q-btn color="info" rounded class="text-black full-width">了解 {{ 'MODEL 3' }}</q-btn>
+			<q-btn color="dark" rounded class="full-width-md">定制我的 {{ 'MODEL 3' }}</q-btn>
+			<q-btn color="info" rounded class="text-black full-width-md">了解 {{ 'MODEL 3' }}</q-btn>
 		</section>
 
 		<section class="scroll-more-wrap">
@@ -29,12 +29,15 @@
 <style lang="scss" scoped>
 .model {
 	text-align: center;
+	height: 100vh;
+	position: relative;
+	border: 1px solid transparent;
 
 	img{
 		width: 100%;
 		height: 100vh;
 		position: absolute;
-		top: 0;
+		top: calc(0px - var(--header-height));
 		left: 0;
 		object-fit: cover;
 		z-index: -999;
@@ -90,6 +93,12 @@
 
 	.scroll-more-wrap{
 		bottom: 16px;
+	}
+
+	@media screen and (max-width: 599px) {
+		.full-width-md{
+			width: 100%;
+		}
 	}
 }
 </style>

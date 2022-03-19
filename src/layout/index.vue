@@ -105,12 +105,15 @@ const menu = reactive([
 	.q-header {
 		padding: 0 32px;
 		background-color: transparent;
-		height: 54px;
+		height: var(--header-height);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		font-size: 14px;
 		font-weight: 500;
+		position: fixed;
+		top: 0;
+		left: 0;
 
 		ol{
 			display: flex;
