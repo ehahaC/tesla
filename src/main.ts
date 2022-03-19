@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import { initQuasar } from "@/plugins/quasar"
 
-createApp(App).use(router).mount('#app')
+export const app = createApp(App)
+
+initQuasar(app)
+
+app.use(router).mount('#app')
