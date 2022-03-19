@@ -10,8 +10,10 @@ import {
 	QItem,
 	QItemSection,
 	QToolbar,
+	QToolbarTitle,
 	QIcon,
-	QPage
+	QPage,
+	QAvatar
 } from "quasar";
 import quasarUserOptions from "../quasar-user-options";
 
@@ -24,9 +26,11 @@ export function initQuasar(app: any) {
 		.component("QList", QList)
 		.component("QItemLabel", QItemLabel)
 		.component("QToolbar", QToolbar)
+		.component("QToolbarTitle", QToolbarTitle)
 		.component("QItem", QItem)
 		.component("QItemSection", QItemSection)
 		.component("QIcon", QIcon)
 		.component("QPage", QPage)
+		.component("QAvatar", QAvatar)
 		.use(Quasar, quasarUserOptions);
 }
