@@ -145,5 +145,9 @@ const menu = reactive([
 			}
 		}
 	}
+
+	.q-page-container{
+		padding-top: 0px !important;
+	}
 }
 </style>
