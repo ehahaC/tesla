@@ -52,7 +52,10 @@ import { reactive } from "vue";
 import Header from "./components/header.vue";
 import { matInfo } from "@quasar/extras/material-icons";
 
-const form = reactive({});
+const form = reactive({
+	email: "",
+	password: ""
+});
 
 const onSubmit = () => {};
 const onReset = () => {};
